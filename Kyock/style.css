@@ -1,0 +1,102 @@
+@font-face {
+    font-family: xMody;
+    src: url(IMG/xMoDy.otf);
+}
+*{
+    font-family: xMody;
+
+}
+.main {
+    background: rgba(0, 0, 0, 0.645);
+    margin: 50px;
+    padding: 0 50px;
+    text-align: center;
+    border-top: 2px solid #f0b518;
+  }
+
+
+  img{
+    padding-top: 10px;
+    margin-bottom: 10px;
+    height: 45px;
+    width: 100px;
+  }
+  
+  button{
+    margin: 0 0 10px 0;
+    padding: 5px;
+    background-color: #002366;
+    color: #f0b518;
+    border-radius: 10px;
+    box-shadow: 2px 0 #f0b518;
+    font-size: 20px;
+    font-weight: 50;
+    border: 0;
+  }
+  button:hover{
+    transition: 0.8s;
+    background: linear-gradient(to left, #f0b518 50%, #002366 50%) right;
+    background-size: 200% 100%;
+    color: #fff;
+  }
+
+
+  h1{
+    color: #002366;
+    display: inline;
+    font-size: 10px;
+  
+  }
+
+  #Secend input{
+    margin: 10px;
+    padding: 5px;
+    text-align: right;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0 2px #f0b518;
+    color: #002366;
+    
+  }
+  #Secend input::placeholder{
+    color: #f0b518;
+
+  }
+
+  #Secend h3{
+    color: white;
+  }
+
+  #Secend .test {
+    margin: 10px;
+    padding: 5px;
+    text-align: right;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0 2px #f0b518;
+    color: #002366;
+    
+  }
+  textarea{
+    margin: 10px;
+    padding: 5px;
+    text-align: right;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 0 2px #f0b518;
+    color: #002366;
+  }
+  label{
+    color: white;
+  }
+  #Third h2{
+    display: inline;                   
+    color: #002366;
+    font-size: 14px;
+  }
+  #Third h3{
+    color: #fff;
+  }
+  #Third .Value{
+    color: #f0b518;
+  }ّ

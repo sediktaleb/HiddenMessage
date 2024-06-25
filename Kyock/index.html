@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript"
+         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+ </script>
+ <script type="text/javascript">
+    (function(){
+       emailjs.init({
+         publicKey: "5rQqLEnZRR3g3SbRY",
+       });
+    })();
+ </script>
+</head>
+<body>
+    <div class="main">  
+        <img src="IMG/LogoNAFTAL.svg.png" class="First"><br>
+        <div id="First">
+            <button onclick="setTimeout(First, 1100)" class="First">حساب جديد</button><br>
+            <button onclick="alert('لم يتم اضافاتها')" class="First">الحسابات القديمة</button><br>
+            <button onclick="Forth()" class="First">ارسال شكوى</button>
+
+          </div>
+        <div id="Secend">
+            <h3>: ادخل المعلومات الاتية</h3>
+
+            <select name="person" id="person" class="test">
+                <option value="رياض">رياض</option>
+                <option value="اسلام">اسلام</option>
+              </select>
+              <select name="time" id="time" class="test">
+                <option value="صباحا">صباحا</option>
+                <option value="مساءا">مساءا</option>
+              </select>
+              <br>
+            <input type="date" name="" id="Date" placeholder="التاريخ"><label>: التاريخ</label><br>
+            <input type="number" name="" id="Mazot" placeholder="عدد لترات المازوت"><br>
+            <input type="number" name="" id="Ess" placeholder="عدد لترات البنزين"><br>
+            <input type="number" name="" id="BoDa5la" placeholder="بونات داخلة"><br>
+            <textarea name="" id="BDT" placeholder="تفاصيل البونات الداخلة "></textarea><br>
+            <input type="number" name="" id="Bo5alsa" placeholder="بونات خالصة"><br>
+            <input type="number" name="" id="Tunis" placeholder="التونسية"><input type="number" name="" id="DayTunis" placeholder="السعر (-.-6)"> <br><br>
+            <button onclick="Calculat()" >حسـاب</button><br>
+        </div>
+
+        <div id="Third">
+            <h3>المعلومات التي تمت ادخالها</h3>
+            <h2 id="TimeValue" class="Value"></h2>  <h2>   : الوقت</h2><br>
+            <h2 id="PersonValue" class="Value"></h2>  <h2>   : الشخص</h2><br>
+            <h2 id="MazotValue" class="Value"></h2>  <h2>   : المازوت</h2><br>
+            <h2 id="EssValue" class="Value"></h2>  <h2>   : البنزين</h2><br>
+            <h2 id="TunisValue" class="Value"></h2>  <h2>   : التونسية </h2><br>
+            <h2 id="DayTunisValue" class="Value"></h2>  <h2>   : سعر التونسية </h2><br>
+
+            <h2 id="DateValue" class="Value"></h2>  <h2>   : الزمن</h2><br>
+            <h2 id="BoDa5laValue" class="Value"></h2>  <h2>   : البونات الداخلة</h2><br>
+            <h2 id="Bo5alsaValue" class="Value"></h2>  <h2>   : البونات الخالصة</h2><br><br><br>
+            <h2 id="TotalDinar" class="Value"></h2>  <h2>   : المبلغ الاجمالي  </h2><br>
+
+            <button style="margin-top: 20px;" onclick="send()">ارسـال المعلومات </button><br>
+        </div>
+
+    <div id="Forth">
+      
+      <textarea id="Report" style="padding: 15px;" placeholder="اكتب الشكوى هنا"></textarea> <br>
+
+      <button onclick="Report()" id="ReportButton">ارسال الشكوى</button>
+      <br><br>
+    </div>
+    <h1 style="color: #f0b518;margin-top: 10px;"> 0.2</h1> <h1>  : النظام النسخة</h1>
+
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
